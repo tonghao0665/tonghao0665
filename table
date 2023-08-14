@@ -1,0 +1,11 @@
+ table_schema.createColumn( "first_name", Domain.VARCHAR, 32 );
+            table_schema.createColumn( "age", Domain.INTEGER );
+            table_schema.createColumn( "dept_no", Domain.INTEGER );
+            IndexSchema index_schema = table_schema.createPrimaryIndex( "prime_keys" );
+            index_schema.addColumn( "number", IndexSchema.ASCENDING );
+    
+            table_schema = conn.createTable( "Department" );
+            table_schema.createColumn( "dept_no", Domain.INTEGER );
+            table_schema.createColumn( "name", Domain.VARCHAR, 50 );
+            index_schema = table_schema.createPrimaryIndex( "prime_keys" );
+            index_schema.addColumn( "dept_no", IndexSchema.ASCENDING );
