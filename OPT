@@ -1,0 +1,4 @@
+JAVA_OPTS="${JAVA_OPTS} ${durable}" 
+JAVA_OPTS="${JAVA_OPTS} ${transactional}" 
+JAVA_OPTS="${JAVA_OPTS} ${jndiCtxFactory}" 
+JAVA_OPTS="${JAVA_OPTS} ${connFactory}" 
