@@ -1,0 +1,6 @@
+ String topicName) 
+  throws Exception 
+  { 
+    super(clientID, subName, selector, durable, transactional, 
+      jndiCtxFactory, connFactory, providerURL, topicName); 
+  } 
